@@ -1,13 +1,3 @@
 https://221x.github.io
 
-ADDED:
--header
-  navbar
-  logo
-  Text
--Member List
--Ally list
--Enemy list
--footer
- sites' source code 
- 
+The #221xlogo is a sending me the website's traffic.
