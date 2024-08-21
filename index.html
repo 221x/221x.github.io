@@ -1,34 +1,69 @@
-<!DOCTYPE html>
+<!DOTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roblox Avatar</title>
-</head>
-<body>
-    <div id="avatar-container">
-        <!-- Setze einen Platzhalter, der entfernt wird, wenn das echte Bild geladen wird -->
-        <img id="avatar-img" src="https://via.placeholder.com/150?text=Loading..." alt="Avatar">
-    </div>
-
-    <script>
-        const userId = '4632966663';  // Roblox Nutzer-ID
-        const avatarUrl = `https://thumbnails.roblox.com/v1/users/avatar-headshot?userIds=${userId}&size=150x150&format=Png&isCircular=false`;
-
-        fetch(avatarUrl)
-            .then(response => response.json())
-            .then(data => {
-                console.log("API Response:", data); // Logge die API-Antwort zur Fehlerbehebung
-                if (data.data && data.data[0] && data.data[0].imageUrl) {
-                    // Setze das echte Avatar-Bild, sobald die Daten geladen sind
-                    document.getElementById('avatar-img').src = data.data[0].imageUrl;
-                } else {
-                    console.error('Avatar image not found in the response');
-                }
-            })
-            .catch(error => {
-                console.error('Error fetching the avatar:', error);
-            });
-    </script>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Title</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <img
+                id="221xlogo"
+                src="https://cdn.discordapp.com/attachments/1262941415302762576/1274394793501393048/image.png?ex=66c75e23&is=66c60ca3&hm=ab0c6e232e36b3ffe566a0663a594db7c5533f6ff846dc844549b2bff978d263&" />
+            <h1>Roblox Ohio - 221x Clan</h1>
+            <nav>
+                <ul>
+                    <li><a href="#member_list">Members</a></li>
+                    <li><a href="#allies">Allies</a></li>
+                    <li><a href="#kill_list">Enemies</a></li>
+                </ul>
+            </nav>
+        </header>
+        <hr>
+        <main>
+            <h3 class="members">Our current Members:</h3>
+            <div id="member_list">
+                <ul>
+                    <li><p class="members"><a href="https://www.roblox.com/users/4103240500/profile">221xOiixz</a></p></li>
+                    <li><p class="members"><a href="https://www.roblox.com/users/4632966663/profile">221xDROKEINROLL</a></p></li>
+                    <li><p class="members"><a href="https://www.roblox.com/users/4639164824/profile">221xJanis</a></p></li>
+                    <li><p class="members"><a href="https://www.roblox.com/users/4355575998/profile">Cloudz</a></p></li>
+                    <li><p class="members"><a href="https://www.roblox.com/users/5250720862/profile">22xAbraham_Lincoln</a></p></li>
+                    <li><p class="members"><a href="https://www.roblox.com/users/1793339148/profile">221x_kiddo</a></p></li>
+                    <li><p class="members"><a href="https://www.roblox.com/users/2022111616/profile">221xARDPOP</a></p></li>
+                    <li><p class="members"><a href="https://www.roblox.com/users/4238542910/profile">221microbe</a></p></li>
+                    <li><p class="members"><a href="https://www.roblox.com/users/3206848040/profile">221x55SW</a></p></li>
+                    <li><p class="members"><a href="https://www.roblox.com/users/1941128125/profile">Sigma</a></p></li>
+                </ul>
+            </div>
+            <hr>
+            <h3 class="allies">Our Allies:</h3>
+            <div id="allies">
+                <ul>
+                    <li><p>Sni - "Security Nah Ingame"</p></li>
+                    <li><p>RG4x - "RG4xOnTop"</p></li>
+                </ul>
+            </div>
+            <hr>
+            <h3 class="enemies">Enemy Clans</h3>
+            <div id="kill_list">
+                <ul>
+                    <li><p class="enemies">AKD - "PVP CLAN"</p></li>
+                    <li><p class="enemies">EOM - "Empire Of Monkeys"</p></li>
+                    <li><p class="enemies">GODz - "GODZ Empire"</p></li>
+                    <li><p class="enemies">IYI - "IYI Beyli"</p></li>
+                    <li><p class="enemies">L1N - "LEG1ON"</p></li>
+                    <li><p class="enemies">Lis - "Frog Balls"</p></li>
+                    <li><p class="enemies">SJW - "SoulJaWitch"</p></li>
+                    <li><p class="enemies">TIME - "TMx"</p></li>
+                    <li><p class="enemies">xOTF - "Only the Family"</p></li>
+                </ul>
+            </div>
+        </main>
+        <footer>
+            <a href="https://github.com/221x/221x.github.io"><img id="github" src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_1280.png"></a>
+        </footer>
+    </body>
 </html>
