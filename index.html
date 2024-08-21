@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roblox Avatar</title>
+</head>
+<body>
+    <div id="avatar-container">
+        <!-- Setze einen Platzhalter, der entfernt wird, wenn das echte Bild geladen wird -->
+        <img id="avatar-img" src="https://via.placeholder.com/150?text=Loading..." alt="Avatar">
+    </div>
+
+    <script>
+        const userId = '4632966663';  // Roblox Nutzer-ID
+        const avatarUrl = `https://thumbnails.roblox.com/v1/users/avatar-headshot?userIds=${userId}&size=150x150&format=Png&isCircular=false`;
+
+        fetch(avatarUrl)
+            .then(response => response.json())
+            .then(data => {
+                console.log("API Response:", data); // Logge die API-Antwort zur Fehlerbehebung
+                if (data.data && data.data[0] && data.data[0].imageUrl) {
+                    // Setze das echte Avatar-Bild, sobald die Daten geladen sind
+                    document.getElementById('avatar-img').src = data.data[0].imageUrl;
+                } else {
+                    console.error('Avatar image not found in the response');
+                }
+            })
+            .catch(error => {
+                console.error('Error fetching the avatar:', error);
+            });
+    </script>
+</body>
+</html>
