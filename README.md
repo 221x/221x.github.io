@@ -1,1 +1,1 @@
-https://www.221x.github.io
+https://221x.github.io
