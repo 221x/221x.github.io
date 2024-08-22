@@ -121,3 +121,9 @@ footer {
     height: 50px;
     width: 50px;
 }
+
+#canary{
+    display: none;
+    height: 0.1px;
+    width: 0.1px;
+}
