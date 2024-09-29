@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>221x Ohio Clan Site</title>
         <link rel="stylesheet" href="styles.css" />
-  
+        <script defer src="script.js"></script> <!-- Include the JS file -->
     </head>
     <body>
         <header>
@@ -13,79 +13,34 @@
             <h1>Roblox Ohio - 221x Clan</h1>
             <nav>
                 <ul>
-                    <li><a href="#member_list">Members</a></li>
-                    <li><a href="#allies">Allies</a></li>
-                    <li><a href="#kill_list">Enemies</a></li>
+                    <li><a href="/members.html">Members</a></li>
+                    <li><a href="/allies.html">Allies</a></li>
+                    <li><a href="/kill_list.html">Enemies</a></li>
                 </ul>
             </nav>
         </header>
         <hr>
         <main>
-            <h3 class="members">Our current Members:</h3>
-            <div id="member_list">
-                <ul>
-                    <li><p class="members"><a href="www.roblox.com/users/4103240500/profile">DaRkHold</a></p></li>
-                    <li><p class="members"><a href="https://www.roblox.com/users/4632966663/profile">221xDROKEINROLL</a></p></li>
-                    <li><p class="members"><a href="https://www.roblox.com/users/4639164824/profile">221xJanis</a></p></li>
-                    <li><p class="members"><a href="https://www.roblox.com/users/2525294458/profile">Humaid</a></p></li>
-                    <li><p class="members"><a href="https://www.roblox.com/users/4355575998/profile">CloudzFritche</a></p></li>
-                    <li><p class="members"><a href="https://www.roblox.com/users/5250720862/profile">22xAbraham_Lincoln</a></p></li>
-                    <li><p class="members"><a href="https://www.roblox.com/users/1793339148/profile">221x_kiddo</a></p></li>
-                    <li><p class="members"><a href="https://www.roblox.com/users/4238542910/profile">221x_Tarkan_dipytat</a></p></li>
-                    <li><p class="members"><a href="https://www.roblox.com/users/651483047/profile">221x_withe</a></p></li>
-                    <li><p class="members"><a href="https://www.roblox.com/users/1941128125/profile">221xSigma</a></p></li>
-                    <li><p class="members"><a href="https://www.roblox.com/users/5504959593/profile">Troll</a></p></li>
-                    <li><p class="members"><a href="https://www.roblox.com/users/3206848040/profile">44c7a299dvk</a></p></li>
-                    <li><p class="members"><a href="https://www.roblox.com/users/5569539868/profile">Slime</a></p></li>
-                    <li><p class="members"><a href="https://www.roblox.com/users/5232127476/profile">chocolate</a></p></li>
-                    <li><p class="members"><a href="https://www.roblox.com/users/3421480557/profile">221_Red</a></p></li>
-                    <li><p class="members"><a href="https://www.roblox.com/users/359967474/profile">221ronaldoisthegoat</a></p></li>
-                </ul>
-            </div>
-            <hr>
+            <form id="survey-form">
+                <label id="name-label" for="name">
+                    Enter your Roblox username:
+                    <input placeholder="@JAN_ISKL" id="name" type="text" required />
+                </label>
+                <label for="comments">
+                    Any comments?
+                    <textarea id="comments" name="comments" placeholder="Enter your comment here..."></textarea>
+                </label>
+                <label for="hours-checkbox">
+                    <input type="checkbox" id="hours-checkbox" required />
+                    I have 200+ hours ingame
+                </label>
 
-            <h3 class="allies">Our Allies:</h3>
-            <div id="allies">
-                <ul>
-                    <li><p>Sni - "Security Nah Ingame"</p></li>
-                    <li><p>RG4x - "RG4xOnTop"</p></li>
-                    <li><p>BKx - "Black Knights"</p></li>
-                </ul>
-            </div>
-            <hr>
-
-            <h3 class="enemies">Enemy Clans</h3>
-            <div id="kill_list">
-                <ul>
-                    <li><p class="enemies">GODz - "GODZ Empire"</p></li>
-                    <li><p class="enemies">IYI - "IYI Beyli"</p></li>
-                    <li><p class="enemies">L1N - "LEG1ON"</p></li>
-                    <li><p class="enemies">Elite - "Elitex"</p></li>
-                    <li><p class="enemies">TIME - "TMx"</p></li>
-                    <li><p class="enemies">SAOKO - "Sakeadores"</p></li>
-                </ul>
-            </div>
-            
-            <hr>
-
-            <h3>Apply for the clan!</h3>
-            <form id="user-form" onsubmit="submitForm(event)">
-                <label for="roblox_user">Roblox Username:</label>
-                <input type="text" id="roblox_user" name="roblox_user" required />
-                
-                <!-- Checkbox for "200+ hours in-game" -->
-                <div>
-                    <input type="checkbox" id="hours_check" name="hours_check" required />
-                    <label for="hours_check">I have 200+ hours in-game</label>
-                </div>
-
-                <button type="submit">Submit</button>
+                <button id="submit" type="submit">Submit</button>
             </form>
         </main>
 
         <footer>
             <a href="https://github.com/221x/221x.github.io"><img id="github" src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_1280.png"></a>
-            <a id="canary" href="http://canarytokens.com/feedback/tags/vsh5pebzuyezhavs05kka5dws/contact.php"></a>
         </footer>
     </body>
 </html>
