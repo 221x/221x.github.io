@@ -122,8 +122,45 @@ footer {
     width: 50px;
 }
 
-#canary{
-    display: none;
-    height: 0.1px;
-    width: 0.1px;
+/* Basic styling for the form */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+}
+
+/* Styling the input fields */
+input, textarea {
+    margin: 10px 0;
+    padding: 8px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Label styling */
+label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Styling for the checkbox */
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Submit button styling */
+button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
 }
