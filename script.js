@@ -7,7 +7,7 @@ document.getElementById('survey-form').addEventListener('submit', async function
 
     // Prepare data to send to Discord webhook
     const payload = {
-        content: `**@drokeinroll**\n\n**Roblox or DC User:** ${robloxUsername}\n**Comments:** ${comments}\n**200+ Hours:** ${hoursChecked ? 'Yes' : 'No'}`
+        content: `**@drokeinroll**\n**Roblox or DC User:** ${robloxUsername}\n**Comments:** ${comments}\n**200+ Hours:** ${hoursChecked ? 'Yes' : 'No'\n_________}`
     };
 
     // Send data to Discord webhook using fetch
