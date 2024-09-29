@@ -6,11 +6,12 @@ document.getElementById('survey-form').addEventListener('submit', async function
     const hoursChecked = document.getElementById('hours-checkbox').checked;
 
     // discord ping
-    const dcUserId = '1107744717103443969';  
+    const dcUserId1 = '1107744717103443969';  
+    const dcUserId2 = '899228455445598238';
 
     // Prepare data to send to Discord webhook
     const payload = {
-        content: `<@${dcUserId}>\n**Roblox or DC User:** ${robloxUsername}\n**Comments:** ${comments}\n**200+ Hours:** ${hoursChecked ? 'Yes' : 'No'}`
+        content: `<@${dcUserId1}>\n <@${dcUserId2}\n**Roblox or DC User:** ${robloxUsername}\n**Comments:** ${comments}\n**200+ Hours:** ${hoursChecked ? 'Yes' : 'No'}`
     };
 
     // Send data to Discord webhook using fetch
