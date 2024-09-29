@@ -1,7 +1,19 @@
-https://221x.github.io
-#Javascript
-javascript is used to submit the form on a WebHook
-#css
-styling the website
-#html
-The websites' code 
+# 221x Ohio Clan Website
+
+Below is the file tree of the project, showing the structure and relationships between the files:
+221x-Ohio-Clan-Website/
+├── allies/
+│   ├── index.html
+│   └── styles.css
+├── apply/
+│   ├── index.html
+│   ├── styles.css
+│   └── script.js
+├── kill_list/
+│   ├── index.html
+│   └── styles.css
+├── members/
+│   ├── index.html
+│   └── styles.css
+├── README.md
+└── .gitignore
