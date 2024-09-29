@@ -7,7 +7,7 @@ document.getElementById('survey-form').addEventListener('submit', async function
 
     // Prepare data to send to Discord webhook
     const payload = {
-        content: `**Roblox User:** ${robloxUsername}\n**Comments:** ${comments}\n**200+ Hours:** ${hoursChecked ? 'Yes' : 'No'}`
+        content: `**New Application on 221x Website**\n**Roblox or DC User:** ${robloxUsername}\n**Comments:** ${comments}\n**200+ Hours:** ${hoursChecked ? 'Yes' : 'No'}`
     };
 
     // Send data to Discord webhook using fetch
@@ -24,10 +24,10 @@ document.getElementById('survey-form').addEventListener('submit', async function
             alert('Form submitted successfully!');
             document.getElementById('survey-form').reset(); // Reset the form after submission
         } else {
-            alert('Error submitting the form. Please try again.');
+            alert('Error submitting the form. Please try again or message @drokeinroll on Discord.');
         }
     } catch (error) {
         console.error('Error:', error);
-        alert('An error occurred. Please try again later.');
+        alert('An error occurred. Please try again later or message @drokeinroll on Discord.');
     }
 });
