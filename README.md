@@ -1,4 +1,3 @@
-
 # 221x Ohio Clan Website
 
 Welcome to the **221x Ohio Clan** official website repository! This site is built for the **221x Roblox Ohio Clan** to showcase our members, allies, enemies, and to allow new players to apply for membership.
@@ -17,19 +16,15 @@ The project is structured as follows:
 ├── allies/
 │   ├── index.html        # Allies page
 │   └── styles.css        # Styles
-├── apply/
-│   ├── index.html        # Application form page
-│   ├── styles.css        # Styles
-│   └── script.js         # JavaScript to handle submission
 ├── kill_list/
 │   ├── index.html        # Enemies page
 │   └── styles.css        # Styles
 ├── members/
-│   ├── index.html        # Members page
-│   └── styles.css        # Styles
-├── index.html            # Home page of the website
+│   ├── index.html        # Members page│
+│  └── styles.css         # Styles
+├── index.html            # application page
 ├── styles.css            # Styles
-└──  README.md             # This README file
+└──  README.md            # This README file
 ```
 
 ### Key Pages
