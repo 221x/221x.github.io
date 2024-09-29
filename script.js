@@ -5,9 +5,12 @@ document.getElementById('survey-form').addEventListener('submit', async function
     const comments = document.getElementById('comments').value;
     const hoursChecked = document.getElementById('hours-checkbox').checked;
 
+    // discord ping
+    const dcUserId = '1107744717103443969';  
+
     // Prepare data to send to Discord webhook
     const payload = {
-        content: `@drokeinroll\n**Roblox or DC User:** ${robloxUsername}\n**Comments:** ${comments}\n**200+ Hours:** ${hoursChecked ? 'Yes' : 'No'\n}`
+        content: `<@${dcUserId}>\n**Roblox or DC User:** ${robloxUsername}\n**Comments:** ${comments}\n**200+ Hours:** ${hoursChecked ? 'Yes' : 'No'}`
     };
 
     // Send data to Discord webhook using fetch
@@ -24,10 +27,10 @@ document.getElementById('survey-form').addEventListener('submit', async function
             alert('Form submitted successfully!');
             document.getElementById('survey-form').reset(); // Reset the form after submission
         } else {
-            alert('Error submitting the form. Please try again or message @drokeinroll on Discord.');
+            alert('Error submitting the form. Please try again or message the user.');
         }
     } catch (error) {
         console.error('Error:', error);
-        alert('An error occurred. Please try again later or message @drokeinroll on Discord.');
+        alert('An error occurred. Please try again later or message the user.');
     }
 });
