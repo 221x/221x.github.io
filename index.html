@@ -5,37 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>221x Ohio Clan Site</title>
         <link rel="stylesheet" href="styles.css" />
-        <script>
-            // JavaScript to handle form submission
-            async function submitForm(event) {
-                event.preventDefault(); // Prevent default form submission
-
-                const robloxUser = document.getElementById("roblox_user").value;
-                const hoursCheck = document.getElementById("hours_check").checked;
-
-                // Prepare data to send to the Discord webhook
-                const payload = {
-                    content: `**Roblox User:** ${robloxUser}\n**200+ Hours In-Game:** ${hoursCheck ? 'Yes' : 'No'}`
-                };
-
-                // Send data to Discord webhook using fetch
-                const response = await fetch("https://discord.com/api/webhooks/1289883954362716161/NzYxvCK0I-AqxI9CZ35vVTI_zkiS8BZMtYvtESbKg_eq0AhF75PrR2CuJIm6HMGgwPCU", {
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "application/json",
-                    },
-                    body: JSON.stringify(payload),
-                });
-
-                if (response.ok) {
-                    alert("Form submitted successfully!");
-                    // Optionally clear the form
-                    document.getElementById("user-form").reset();
-                } else {
-                    alert("Error submitting form. Please try again.");
-                }
-            }
-        </script>
+  
     </head>
     <body>
         <header>
