@@ -1,7 +1,3 @@
-Here’s a well-structured `README.md` for your GitHub project, including a file tree with the structure you’ve described:
-
----
-
 # 221x Ohio Clan Website
 
 Welcome to the 221x Ohio Clan Website repository! This project contains the official site for the Roblox 221x Ohio Clan, providing details about members, allies, enemies, and a recruitment form for new applicants.
