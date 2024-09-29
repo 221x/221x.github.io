@@ -6,7 +6,6 @@ Welcome to the 221x Ohio Clan Website repository! This project contains the offi
 - [Project Structure](#project-structure)
 - [Setup](#setup)
 - [Features](#features)
-- [How to Contribute](#how-to-contribute)
 - [License](#license)
 
 ## Project Structure
@@ -53,44 +52,17 @@ Below is the file tree of the project, showing the structure and relationships b
 
 ## Setup
 
-1. Clone the repository:
+1. Navigate to 221x.github.io
    ```bash
-   git clone https://github.com/yourusername/221x-Ohio-Clan-Website.git
+   22x.github.io
    ```
-
-2. Navigate into the project folder:
-   ```bash
-   cd 221x-Ohio-Clan-Website
-   ```
-
-3. Open the HTML files in your browser to view the site or use a local development server.
-
 ## Features
 
 - **Members Page**: View the current list of 221x clan members.
 - **Allies Page**: Check out the clans that have allied with us.
 - **Enemies Page**: View a list of rival clans.
 - **Apply Page**: New players can apply to join the clan through a form that submits directly to a Discord webhook.
-
-## How to Contribute
-
-Feel free to fork this repository and make pull requests. If you encounter any issues, please open an issue in the repository, and we will look into it.
-
-1. Fork the repository.
-2. Create your feature branch:
-   ```bash
-   git checkout -b feature/YourFeature
-   ```
-3. Commit your changes:
-   ```bash
-   git commit -m "Add some feature"
-   ```
-4. Push to the branch:
-   ```bash
-   git push origin feature/YourFeature
-   ```
-5. Open a pull request.
-
+- 
 ## License
 
 This project is open-source and available under the [MIT License](LICENSE).
