@@ -11,12 +11,10 @@ document.getElementById('survey-form').addEventListener('submit', async function
 
     // Prepare data to send to Discord webhook
 const payload = {
-    content: `**New Application Received**\n\n` +
-             `👤 **User Mentioned:** ||<@${drokeinroll}>, <@${xxx}>||\n\n` +
+    content: `**New Application Received** ||<@${drokeinroll}>, <@${xxx}>||\n\n` +
              `📝 **Application Details:**\n` +
-             `- **Roblox or DC User:** ${robloxUsername}\n` +
-             `- **Comments:** ${comments || 'No comments provided'}\n` +
-             `- **200+ Hours in Game:** ${hoursChecked ? '✅ Yes' : '❌ No'}`
+             `- **User:** \`\`\`${robloxUsername}\`\`\`\n` +
+             `- **Comment:** \`\`\`${comments || 'No comments provided'}\`\`\``
 };
 
     // Send data to Discord webhook using fetch
