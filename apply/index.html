@@ -1,1 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>221x Ohio Clan Site</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script defer src="script.js"></script> <!-- Include the JS file -->
+    </head>
+    <body>
+        <header>
+            <img id="221xlogo" src="https://ibb.co/tXBVNRF"/>
+            <h1>Roblox Ohio - 221x Clan</h1>
+            <nav>
+                <ul>
+                    <li><a href="/members">Members</a></li>
+                    <li><a href="/allies">Allies</a></li>
+                    <li><a href="/kill_list">Enemies</a></li>
+                </ul>
+            </nav>
+        </header>
+        <hr>
+        <main>
+            <form id="survey-form">
+                <label id="name-label" for="name">
+                    Enter your Roblox username:
+                    <input placeholder="@JAN_ISKL" id="name" type="text" required />
+                </label>
+                <label for="comments">
+                    Any comments?
+                    <textarea id="comments" name="comments" placeholder="Enter your comment here..."></textarea>
+                </label>
+                <label for="hours-checkbox">
+                    <input type="checkbox" id="hours-checkbox" required />
+                    I have 200+ hours ingame
+                </label>
 
+                <button id="submit" type="submit">Submit</button>
+            </form>
+        </main>
+
+        <footer>
+            <a href="https://github.com/221x/221x.github.io"><img id="github" src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_1280.png"></a>
+        </footer>
+    </body>
+</html>
