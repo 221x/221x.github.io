@@ -13,18 +13,21 @@ The project is structured as follows:
 
 ```bash
 221x-Ohio-Clan-Website/
-├── allies/
+├── /allies
 │   ├── index.html        # Allies page
-│   └── styles.css        # Styles
-├── kill_list/
+│   └── styles.css        # Styles for allies page
+├── /kill_list
 │   ├── index.html        # Enemies page
-│   └── styles.css        # Styles
-├── members/
-│   ├── index.html        # Members page│
-│  └── styles.css         # Styles
-├── index.html            # application page
-├── styles.css            # Styles
-└──  README.md            # This README file
+│   └── styles.css        # Styles for enemies page
+├── /members
+│   ├── index.html        # Members page
+│   └── styles.css        # Styles for members page
+├── index.html            # Application form page
+├── styles.css            # Styles for the application page
+├── script.js             # JavaScript for handling the form submission
+└── README.md             # This README file
+
+In future, the application page will have it's own subpage and there will be a "Home Page"
 ```
 
 ### Key Pages
