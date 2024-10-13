@@ -14,7 +14,8 @@ const payload = {
     content: `**New Application Received** ||<@${drokeinroll}>, <@${xxx}>||\n\n` +
              `📝 **Application Details:**\n` +
              `- **User:** \`\`\`${robloxUsername}\`\`\`\n` +
-             `- **Comment:** \`\`\`${comments || 'No comments provided'}\`\`\``
+             `- **Comment:** \`\`\`${comments || 'No comments provided'}\`\`\`` +
+             `- **200+ hours?:** Yes`
 };
 
     // Send data to Discord webhook using fetch
