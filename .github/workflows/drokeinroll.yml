@@ -17,11 +17,13 @@ jobs:
           USER_ID="4632966663" # Replace with your Roblox User ID
           AVATAR_URL="https://www.roblox.com/avatar-thumbnail/image?userId=${}&width=420&height=420&format=Png"
           curl -o profile_picture.png "$AVATAR_URL"
-
+          
       - name: Commit and push changes
+        env:
+           GITHUB_TOKEN: ${{ secrets.TOKEN_GITHUB }}
         run: |
-          git config --local user.email "klaer.janis@web.de" # Replace with your email
-          git config --local user.name "yhkq1" # Replace with your GitHub username
+          git config --local user.email "klaer.janis@web.de"
+          git config --local user.name "yhkq1"
           git add profile_picture.png
           git commit -m "Update profile picture"
-          git push
+          git push https://${{ secrets.TOKEN_GITHUB }}@github.com/yhkq1/profile-picture.git HEAD:main
