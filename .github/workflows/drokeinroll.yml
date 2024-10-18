@@ -1,0 +1,27 @@
+name: Update Profile Picture
+
+on:
+  schedule:
+    - cron: '0 * * * *'  # Runs every hour (adjust as necessary)
+
+jobs:
+  update_avatar:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout the repository
+        uses: actions/checkout@v2
+
+      - name: Download Profile Picture
+        run: |
+          USER_ID="4632966663" # Replace with your Roblox User ID
+          AVATAR_URL="https://www.roblox.com/avatar-thumbnail/image?userId=${}&width=420&height=420&format=Png"
+          curl -o profile_picture.png "$AVATAR_URL"
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "klaer.janis@web.de" # Replace with your email
+          git config --local user.name "yhkq1" # Replace with your GitHub username
+          git add profile_picture.png
+          git commit -m "Update profile picture"
+          git push
