@@ -9,7 +9,7 @@ You can access the website at:
 
 ## 📂 Project Structure
 
-The project is structured as follows:
+The project is structured as followed:
 
 ```bash
 221x-Ohio-Clan-Website/
