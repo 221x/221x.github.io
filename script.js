@@ -7,15 +7,19 @@ document.getElementById('survey-form').addEventListener('submit', async function
 
     // discord ping
     const drokeinroll = '1107744717103443969';  
-    const xxx = '899228455445598238';
+    const sponge = '899228455445598238';
+    const janis = '789782857852911616';
 
     // Prepare data to send to Discord webhook
+// Prepare data to send to Discord webhook
 const payload = {
-    content: `**New Application Received** ||<@${drokeinroll}>, <@${xxx}>||\n\n` +
-             `📝 **Application Details:**\n` +
-             `- **User:** \`\`\`${robloxUsername}\`\`\`\n` +
-             `- **Comment:** \`\`\`${comments || 'No comments provided'}\`\`\`` +
-             `- **200+ hours?:** Yes`
+  content: `**📋 New Application Received** ||<@${janis}>, <@${drokeinroll}>, <@${sponge}>||\n\n` +
+           `**📝 Application Details:**\n` +
+           `> **User:** \`${robloxUsername}\`\n` +
+           `> **Comment:** ${comments ? `\`\`\`${comments}\`\`\`` : '`No comments provided`'}\n` +
+           `> **200+ hours?:** \`Yes\`\n`
+};
+
 };
 
     // Send data to Discord webhook using fetch
