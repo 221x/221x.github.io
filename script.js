@@ -1,10 +1,10 @@
 document.getElementById('survey-form').addEventListener('submit', async function(event) {
     event.preventDefault(); // Prevent the form from submitting the default way
 
-    const robloxUsername = document.getElementById('name').value;
+    const Username = document.getElementById('name').value;
     const comments = document.getElementById('comments').value;
     const hoursChecked = document.getElementById('hours-checkbox').checked;
-    const platform = document.getElementById('platform').value;
+    const typeOfUser = document.getElementById('platform').value;
 
     // Discord ping IDs
     const drokeinroll = '1107744717103443969';  
@@ -15,7 +15,7 @@ document.getElementById('survey-form').addEventListener('submit', async function
 const payload = {
     content: `**📋 New Application Received** ||<@${janis}>, <@${drokeinroll}>, <@${sponge}>||\n\n` +
              `**📝 Application Details:**\n` +
-             `> **User:** \`${robloxUsername} (${platform})\`\n` + 
+             `> **User:** \`${Username} (${typeOfUser})\`\n` + 
              `> **Comment:** ${comments ? `\`\`\`${comments}\`\`\`` : '`No comments provided`'}\n` +
              `> **200+ hours?:** \`${hoursChecked ? 'Yes' : 'No'}\`\n`
 };
