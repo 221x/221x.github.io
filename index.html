@@ -31,25 +31,21 @@
     </label>
     <input placeholder="@yhkq1" id="name" type="text" required />
 
-    <p>This is my</p>
-    <div class="label-input-group">
-        <label for="discord">Discord username</label>
-        <input type="radio" name="platform" value="discord" id="discord" class="typeofuser" required>
-    </div>
+    <!-- Dropdown für Plattform -->
+    <label for="platform">*This is my</label>
+    <select id="platform" name="platform" required>
+        <option value="" disabled selected>Choose one</option>
+        <option value="discord">Discord username.</option>
+        <option value="roblox">Roblox username.</option>
+    </select>
 
-
-    <div class="label-input-group">
-        <label for="roblox">Roblox username.</label>
-        <input type="radio" name="platform" value="roblox" id="roblox" class="typeofuser">
-    </div>
-
-
+    <!-- Kommentarbereich -->
     <label for="comments">
         Any comments? (leave blank if not)
     </label>
     <textarea id="comments" name="comments" placeholder="Enter your comment here..."></textarea>
 
-
+    <!-- Checkbox-Gruppe -->
     <div class="label-input-group">
         <label for="hours-checkbox">*I have 200+ hours ingame</label>
         <input type="checkbox" id="hours-checkbox" required />
@@ -57,6 +53,7 @@
 
     <button id="submit" type="submit">Submit</button>
 </form>
+
 
 
             <hr>
