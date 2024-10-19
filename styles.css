@@ -121,46 +121,64 @@ footer {
     height: 50px;
     width: 50px;
 }
+/*new part starts here
 
-/* Basic styling for the form */
-form {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    margin: 0 auto;
+/* Grundlegende Stile für das Formular */
+#survey-form {
+    width: 400px; /* Breite des Formulars */
+    margin: 20px auto; /* Zentriert das Formular */
+    padding: 20px; /* Innenabstand */
+    border: 1px solid #ccc; /* Rahmen um das Formular */
+    border-radius: 5px; /* Abgerundete Ecken */
+    font-family: Arial, sans-serif; /* Schriftart */
 }
 
-/* Styling the input fields */
-input, textarea {
-    margin: 10px 0;
-    padding: 8px;
-    font-size: 16px;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-/* Label styling */
+/* Stile für die Labels */
 label {
-    font-weight: bold;
-    margin-top: 10px;
+    display: block; /* Macht das Label zu einem Blockelement */
+    margin-bottom: 5px; /* Abstand unter dem Label */
+    text-align: left; /* Links ausrichten */
 }
 
-/* Styling for the checkbox */
-input[type="checkbox"] {
-    margin-right: 10px;
+/* Stile für die Eingabefelder */
+input[type="text"],
+textarea {
+    width: calc(100% - 10px); /* Breite der Eingabefelder */
+    padding: 5px; /* Innenabstand */
+    margin-bottom: 15px; /* Abstand unter den Eingabefeldern */
+    border: 1px solid #ccc; /* Rahmen um die Eingabefelder */
+    border-radius: 4px; /* Abgerundete Ecken */
 }
 
-/* Submit button styling */
+/* Stile für die Radio-Buttons und Checkboxen */
+.label-input-group {
+    display: flex; /* Flexbox für die Anordnung */
+    align-items: center; /* Vertikale Zentrierung */
+    margin-bottom: 15px; /* Abstand unter der Gruppe */
+}
+
+/* Stile für die Labels in der Eingabengruppe */
+.label-input-group label {
+    margin: 0; /* Entfernt den Standardabstand */
+    flex: 1; /* Macht das Label flexibel, um den Platz zu nutzen */
+}
+
+/* Stile für die Eingabefelder innerhalb der Gruppen */
+.label-input-group input[type="radio"],
+.label-input-group input[type="checkbox"] {
+    margin-left: 10px; /* Abstand zwischen Label und Eingabefeld */
+}
+
+/* Stile für den Submit-Button */
 button {
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
+    background-color: #4CAF50; /* Hintergrundfarbe */
+    color: white; /* Textfarbe */
+    padding: 10px; /* Innenabstand */
+    border: none; /* Entfernt den Standardrahmen */
+    border-radius: 4px; /* Abgerundete Ecken */
+    cursor: pointer; /* Zeigt den Zeiger beim Überfahren */
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #45a049; /* Dunklere Farbe beim Überfahren */
 }
