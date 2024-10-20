@@ -1,3 +1,4 @@
+/*Universal styling*/
 * {
     margin: 0;
     padding: 0;
@@ -121,21 +122,22 @@ footer {
     height: 50px;
     width: 50px;
 }
-/*new part starts here*/
+/*Form styling*/
+
 #survey-form {
     width: 400px; 
     margin: 20px auto; 
     padding: 20px; 
     border: 1px solid #ccc; 
-    border-radius: 5px; 
-    font-family: Arial, sans-serif;
+    border-radius: 5px;
+    font-family: Arial, sans-serif; 
 }
 
 
 label {
     display: block; 
-    margin-bottom: 5px; 
-    text-align: left;
+    margin-bottom: 5px;
+    text-align: left; 
 }
 
 
@@ -145,7 +147,7 @@ textarea {
     padding: 5px; 
     margin-bottom: 15px; 
     border: 1px solid #ccc; 
-    border-radius: 4px;
+    border-radius: 4px; 
 }
 
 
@@ -164,28 +166,19 @@ textarea {
 
 .label-input-group input[type="radio"],
 .label-input-group input[type="checkbox"] {
-    margin-left: 10px; 
+    margin-left: 10px;
 }
 
 
 button {
     background-color: #4CAF50; 
     color: white; 
-    padding: 10px; 
-    border: none; 
-    border-radius: 4px; 
-    cursor: pointer;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer; 
 }
 
 button:hover {
-    background-color: #45a049; 
-}
-
-
-select {
-    width: calc(100% - 10px); 
-    padding: 5px; 
-    margin-bottom: 15px; 
-    border: 1px solid #ccc; 
-    border-radius: 4px; 
+    background-color: #45a049;
 }
