@@ -5,8 +5,6 @@ document.getElementById('survey-form').addEventListener('submit', async function
     const robloxUsername = document.getElementById('name').value;
     const comments = document.getElementById('comments').value;
     const hoursChecked = document.getElementById('hours-checkbox').checked;
-    const platform = document.getElementById('platform').value;
-
 
     const platform = document.querySelector('input[name="platform"]:checked').value;
 
