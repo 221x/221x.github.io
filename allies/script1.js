@@ -13,12 +13,14 @@ document.getElementById('survey-form').addEventListener('submit', async function
 
     // Prepare data to send to Discord webhook
 const payload = {
-    content: `**📋 New Application Received** ||<@${janis}>, <@${drokeinroll}>, <@${sponge}>||\n\n` +
-             `**📝 Application Details:**\n` +
-             `> **User:** \`${Username} (${typeOfUser})\`\n` + 
-             `> **Comment:** ${comments ? `\`\`\`${comments}\`\`\`` : '`No comments provided`'}\n` +
-             `> **200+ hours?:** \`${hoursChecked ? 'Yes' : 'No'}\`\n`
-};
+        content:
+            `**📋 Alliance Request received** ||<@${janis}>, <@${drokeinroll}>, <@${sponge}>||\n\n` +
+            `**📝 Allied Clan Details:**\n` +
+            `> **User:** \`${clan}\`\n` +
+            `> **User:** \`${owner}\` (${platform})\n` +
+            `> **Comment:** ${comments ? `\`\`\`${comments}\`\`\`` : "`No comments provided`"}\n`
+    };
+
 
     // Send data to Discord webhook using fetch
     try {
