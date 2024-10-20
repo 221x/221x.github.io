@@ -15,6 +15,7 @@ The project is structured as followed:
 221x-Ohio-Clan-Website/
 ├── /allies
 │   ├── index.html        # Allies page
+│   ├──script.js          # For Submission
 │   └── styles.css        # Styles for allies page
 ├── /kill_list
 │   ├── index.html        # Enemies page
