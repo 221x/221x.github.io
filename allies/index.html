@@ -9,7 +9,7 @@
     </head>
     <body>
         <header>
-            <img id="221xlogo" src="/logo.png" alt="221x Logo" />
+            <img id="221xlogo" src="https://i.ibb.co/BNL07kF/d60b5a4b8e63da4215f196df5b2bca0c.webp" />
             <h1>Roblox Ohio - 221x Clan</h1>
             <nav>
                 <ul>
@@ -31,6 +31,29 @@
                     <li><p>BKx - "Black Knights"</p></li>
                 </ul>
             </div>
+            <hr>
+            <h4>Want to create an Alliance with us?</h4>
+            <br>
+            <p>Fill out the Form below:</p>
+            <form id="survey-form">
+                <label id="name-label" for="name"> *Clan name</label>
+                <input placeholder="221x" id="name" type="text" required />
+
+                <label id="ownername-label" for="owner"> *Username of clan Owner:</label>
+                <input placeholder="@drokeinroll" id="owner" type="text" required />
+
+                <label for="platform">*Username Type</label>
+                <select id="platform" name="platform" required>
+                    <option value="" disabled selected>Choose one</option>
+                    <option value="discord">Discord username.</option>
+                    <option value="roblox">Roblox username.</option>
+                </select>
+
+                <label for="comments"> Any comments? (leave blank if not) </label>
+                <textarea id="comments" name="comments" placeholder="Enter your comment here..."></textarea>
+
+                <button id="submit" type="submit">Submit</button>
+            </form>
         </main>
         <!--allies main ends-->
         <!--Universal continues here-->
@@ -40,6 +63,7 @@
                 ><img id="github" src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_1280.png"
             /></a>
         </footer>
+        <script href="script.js"></script>
     </body>
 </html>
 <!--end-->
