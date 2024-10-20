@@ -1,4 +1,4 @@
-//221x webhook activated//
+//221x webhook activated
 document.getElementById("survey-form").addEventListener("submit", async function (event) {
     event.preventDefault();
 
