@@ -24,7 +24,7 @@ const payload = {
 
     // Send data to Discord webhook using fetch
     try {
-        const response = await fetch('https://discord.com/api/webhooks/1289883954362716161/NzYxvCK0I-AqxI9CZ35vVTI_zkiS8BZMtYvtESbKg_eq0AhF75PrR2CuJIm6HMGgwPCU', {
+        const response = await fetch('https://discord.com/api/webhooks/1297687744830767245/nLoDzjEyygTPpdEwtdEkGJyPgkfCq8Ir5PSr4fBnWS1jg6uBJdTKJNYdNgx-95CHCqXj', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
