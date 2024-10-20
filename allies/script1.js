@@ -16,8 +16,8 @@ const payload = {
         content:
             `**📋 Alliance Request received** ||<@${janis}>, <@${drokeinroll}>, <@${sponge}>||\n\n` +
             `**📝 Allied Clan Details:**\n` +
-            `> **User:** \`${clan}\`\n` +
-            `> **User:** \`${owner}\` (${platform})\n` +
+            `> **Clan:** \`${clan}\`\n` +
+            `> **Owner username:** \`${owner}\` (${typeOfUser})\n` +
             `> **Comment:** ${comments ? `\`\`\`${comments}\`\`\`` : "`No comments provided`"}\n`
     };
 
