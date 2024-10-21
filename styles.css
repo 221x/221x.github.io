@@ -286,6 +286,9 @@ button:hover {
         flex-direction: row;
         gap: 15px;
     }
+        nav ul li a {
+        font-size: 1rem;
+    }
 
     main {
         padding: 20px;
