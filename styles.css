@@ -233,14 +233,19 @@ button:hover {
         align-items: center;
         text-align: center;
     }
+        nav ul {
+        display: flex;           /* Use flexbox layout */
+        flex-direction: row;    /* Arrange items in a row */
+        justify-content: center; /* Center the items horizontally */
+        gap: 10px;              /* Add spacing between items */
+    }
+
+    nav ul li {
+        margin: 0;             /* Remove margin from list items */
+    }
 
     h1 {
         font-size: 1.5rem;
-    }
-
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
     }
 
     main {
