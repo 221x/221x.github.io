@@ -208,6 +208,9 @@ button:hover {
     nav ul li {
         margin: 0;             /* Remove margin from list items */
     }
+        nav ul li a {
+        font-size: 1rem;
+    }
 
     main {
         padding: 15px;
