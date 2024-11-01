@@ -1,3 +1,7 @@
+/*stand*/
+.stand{
+    font-size: 7px;
+    color: grey;
 /*Universal styling*/
 * {
     margin: 0;
